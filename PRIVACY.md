@@ -1,6 +1,6 @@
 # Bookscout Privacy Policy
 
-_Last updated: 2026-10-18_
+_Last updated: 2026-10-22_
 
 Bookscout is a browser extension that helps self-publishers research book niches on
 Amazon. It is designed so that your research stays on your device.
@@ -60,6 +60,6 @@ https://www.lemonsqueezy.com/privacy
 
 ## Contact
 
-Questions: SUPPORT-EMAIL (replace before publishing)
+Questions or support: risioja@gmail.com
 
 Bookscout is not affiliated with Amazon. Sales figures are estimates.
