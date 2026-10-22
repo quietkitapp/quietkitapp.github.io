@@ -1,79 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bookscout Privacy Policy — Quietkit</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bookscout Privacy Policy</title>
+<style>
+  :root { --fg: #1b1f24; --muted: #5b6370; --bg: #ffffff; --accent: #2f6fdb; --border: #d9dde3; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8eaed; --muted: #a0a7b3; --bg: #17191d; --accent: #6d9ef5; --border: #353a42; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  code { font-size: 14px; background: color-mix(in srgb, var(--border) 50%, transparent); padding: 1px 5px; border-radius: 4px; }
+  ul { padding-left: 22px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); }
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="../index.html"><span class="brand-mark">Q</span>Quietkit</a>
-      <nav class="nav"><a href="../index.html#extensions">Extensions</a><a href="../index.html#pricing">Pricing</a><a href="../index.html#contact">Contact</a></nav>
-    </div>
-  </header>
+<main>
+  <h1>Bookscout Privacy Policy</h1>
+  <p class="muted">Last updated: October 22, 2026</p>
 
-  <main class="legal">
-    <h1>Bookscout Privacy Policy</h1>
-    <p class="updated">Last updated: October 22, 2026</p>
+  <p>Bookscout is a browser extension that helps self-publishers research book niches on Amazon. It is designed so that your research stays on your device.</p>
 
-    <div class="box">
-      Bookscout is a browser extension that helps self-publishers research book niches on Amazon. It is designed so that your research stays on your device.
-    </div>
+  <h2>What Bookscout reads</h2>
+  <ul>
+    <li><strong>Amazon pages you open</strong> (search results and product pages on the supported Amazon marketplaces), to show research data on top of them.</li>
+    <li><strong>Amazon product pages of the results you are viewing.</strong> These are fetched in the background at a slow rate (one request every 1.5–2 seconds) to read the Best Sellers Rank, page count and publication date. The requests go directly from your browser to Amazon, like opening the page yourself. Bookscout never loads pages beyond the results you are viewing, except the next results page when you click “Analyze next page”.</li>
+    <li><strong>Amazon’s search-suggestion service</strong>, when you use the keyword explorer, with the keywords you type.</li>
+  </ul>
 
-    <h2>What Bookscout reads</h2>
-    <ul>
-      <li><strong>Amazon pages you open</strong> (search results and product pages on the supported Amazon marketplaces) to show research data on top of them.</li>
-      <li><strong>Amazon product pages of the results you are viewing</strong>, fetched in the background at a slow rate (one request every 1.5–2 seconds) to read the Best Sellers Rank, page count and publication date. These requests go directly from your browser to Amazon, like opening the page yourself. Bookscout never crawls pages you did not open, except the next results page when you click "Analyze next page".</li>
-      <li><strong>Amazon's search-suggestion service</strong> when you use the keyword explorer, with the keywords you type.</li>
-    </ul>
+  <h2>What Bookscout stores</h2>
+  <p>Everything below is stored only in your browser (<code>chrome.storage.local</code>) and is never sent to us or to any third party:</p>
+  <ul>
+    <li>settings (theme, marketplace, royalty settings, filters)</li>
+    <li>a 24-hour cache of product data and a history of Best Sellers Ranks you have seen</li>
+    <li>saved niches and their snapshots</li>
+    <li>the last search analysis (for the side panel and CSV export)</li>
+    <li>your license key, license instance ID and license status</li>
+  </ul>
+  <p>You can clear the cache in <strong>Options → Data &amp; privacy</strong>, or remove all data by uninstalling the extension.</p>
 
-    <h2>What Bookscout stores</h2>
-    <p>Everything below is stored only in your browser (<code>chrome.storage.local</code>) and is never sent to us or to any third party:</p>
-    <ul>
-      <li>settings (theme, marketplace, royalty settings, filters)</li>
-      <li>a 24-hour cache of product data and a history of Best Sellers Ranks you have seen</li>
-      <li>saved niches and their snapshots</li>
-      <li>the last search analysis (for the side panel and CSV export)</li>
-      <li>your license key, license instance id and license status</li>
-    </ul>
-    <p>You can clear the cache in <strong>Options → Data &amp; privacy</strong>, or remove all data by uninstalling the extension.</p>
+  <h2>What leaves your device</h2>
+  <p>Only for the paid plan: your <strong>license key</strong> and the license <strong>instance ID</strong> are sent to <strong>Lemon Squeezy</strong> (<code>api.lemonsqueezy.com</code>), our payment provider and merchant of record. This is used to activate the license, validate it (on browser start and once a day) and deactivate it. No browsing data, research data or personal information is included.</p>
+  <p>Purchases happen on Lemon Squeezy’s checkout page, where <a href="https://www.lemonsqueezy.com/privacy">Lemon Squeezy’s privacy policy</a> applies.</p>
 
-    <h2>What leaves your device</h2>
-    <p>Only for the paid plan: your <strong>license key</strong> and the license <strong>instance id</strong> are sent to <strong>Lemon Squeezy</strong> (<code>api.lemonsqueezy.com</code>), our payment provider and merchant of record, to activate, validate (on browser start and once a day) and deactivate the license. No browsing data, research data or personal information is included.</p>
-    <p>Purchases happen on Lemon Squeezy's checkout page; their privacy policy applies there: <a href="https://www.lemonsqueezy.com/privacy">https://www.lemonsqueezy.com/privacy</a></p>
+  <h2>What Bookscout does not do</h2>
+  <ul>
+    <li>No analytics, tracking, advertising or fingerprinting.</li>
+    <li>No remote code.</li>
+    <li>No selling or sharing of data.</li>
+    <li>No access to websites other than the supported Amazon marketplaces and Lemon Squeezy.</li>
+  </ul>
 
-    <h2>What Bookscout does not do</h2>
-    <ul>
-      <li>No analytics, tracking, advertising or fingerprinting.</li>
-      <li>No remote code.</li>
-      <li>No selling or sharing of data.</li>
-      <li>No access to websites other than the supported Amazon marketplaces and Lemon Squeezy.</li>
-    </ul>
+  <h2>Permissions</h2>
+  <ul>
+    <li><code>storage</code> – keep settings, cache and saved niches locally</li>
+    <li><code>alarms</code> – re-validate the license once a day</li>
+    <li><code>sidePanel</code> – the research workspace</li>
+    <li><code>offscreen</code> – parse fetched product pages (the extension’s background worker cannot parse HTML)</li>
+    <li>Access to <code>amazon.com</code>, <code>amazon.co.uk</code>, <code>amazon.de</code>, <code>amazon.fr</code>, <code>amazon.es</code>, <code>amazon.it</code>, <code>amazon.ca</code>, <code>amazon.com.au</code>, <code>amazon.co.jp</code> (pages and search suggestions) and <code>api.lemonsqueezy.com</code> (license only)</li>
+  </ul>
 
-    <h2>Permissions</h2>
-    <ul>
-      <li><code>storage</code> – keep settings, cache and saved niches locally</li>
-      <li><code>alarms</code> – re-validate the license once a day</li>
-      <li><code>sidePanel</code> – the research workspace</li>
-      <li><code>offscreen</code> – parse fetched product pages (service workers cannot parse HTML)</li>
-      <li>Host access to <code>amazon.com</code>, <code>amazon.co.uk</code>, <code>amazon.de</code>, <code>amazon.fr</code>, <code>amazon.es</code>, <code>amazon.it</code>, <code>amazon.ca</code>, <code>amazon.com.au</code>, <code>amazon.co.jp</code> (pages and search suggestions) and <code>api.lemonsqueezy.com</code> (license only)</li>
-    </ul>
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published on this page with a new “Last updated” date.</p>
 
-    <h2>Contact</h2>
-    <p>Questions or support: <a href="mailto:risioja@gmail.com">risioja@gmail.com</a></p>
-    <p>Bookscout is not affiliated with Amazon. Sales figures are estimates.</p>
-  </main>
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:risioja@gmail.com">risioja@gmail.com</a></p>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>© 2026 Quietkit · Operated by Rus Sergiu, Republic of Moldova</span>
-      <nav><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../refund.html">Refunds</a><a href="../index.html#contact">Contact</a></nav>
-    </div>
-  </footer>
+  <footer class="muted">Bookscout is not affiliated with Amazon. Sales figures are estimates.</footer>
+</main>
 </body>
 </html>
